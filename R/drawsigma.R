@@ -13,7 +13,7 @@
 #' @importFrom MCMCpack rinvgamma
 #'
 #' @export
-
+#-------------------comment the formula number in the paper when it is used
 drawsigma = function(X, Y, beta, index, nu, sigma0, N) {
   SSR = sum((Y - rowSums(X * beta[index,]))^2)
   sigma = rinvgamma(1, 0.5 * (nu + N), 0.5 * (nu * sigma0 + SSR))
