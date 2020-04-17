@@ -17,6 +17,8 @@
 #'
 #' @export
 
+
+#--------------------------------------give an example or extra explanation of W, since it is not appeared in the vignette
 traj = function(X,y,K,z,iterations,W=matrix(),thin=1,dispIter=10,ll=FALSE) {
 
 #extract ids from design matrices
@@ -47,12 +49,13 @@ nu0 = 0.001
 sigma0 = 1
 
 #initialize parameters
+  #----------------------------maybe better to re-mention the initializtion rule
 c = sample(c(1:K),N,replace=TRUE)
 pi = as.vector(rdirichlet(1,alpha))
 sigma = 1
 Sigma = list()
 for (j in 1:K)
-  Sigma[[j]] = 100*diag(sum(z[j,]))
+  Sigma[[j]] = 100*diag(sum(z[j,])) # ---------confused here
 beta=matrix(0,nrow=K,ncol=d,byrow=TRUE)
 mu = list()
 for (j in 1:K)
@@ -115,6 +118,7 @@ for (q in 1:iterations) {
     maxll = max(maxll,ll.c)
   }
   
+   #-----------just briefly mention we are organizing results here  
   if (q %% thin == 0) {
     store = q/thin
     if (P == 1)
