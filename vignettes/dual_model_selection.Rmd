@@ -1,8 +1,8 @@
 ---
-title: "Bayesian Dual GBTM"
+title: "Bayesian Dual GBTM selection"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Bayesian Dual GBTM}
+  %\VignetteIndexEntry{Bayesian Dual GBTM selection}
   %\VignetteEngine{knitr::knitr}
   %\VignetteEncoding{UTF-8}
 ---
