@@ -1,8 +1,8 @@
 ---
-title: "Bayesian GBTM"
+title: "Bayesian GBTM single traj"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{my-vignette}
+  %\VignetteIndexEntry{Bayesian GBTM single traj}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
